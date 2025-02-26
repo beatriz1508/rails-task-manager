@@ -1,0 +1,12 @@
+<%= form_with model: task, local: true do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+
+  <%= f.label :status %>
+  <%= f.check_box :completed %>
+
+  <%= f.submit %>
+<% end %>
